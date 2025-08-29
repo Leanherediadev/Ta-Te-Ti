@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Game: Tic Tac Toe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Tic Tac Toe</h1>
+
+ <!-- Selector de modo de juego -->
+  <label for="mode-select">Modo de juego:</label>
+  <select id="mode-select">
+    <option value="pvp">Jugador vs Jugador</option>
+    <option value="pve">Jugador vs IA</option>
+  </select>
+
+    <div class="game-container">
+      <div class="game-cell"></div>
+      <div class="game-cell"></div>
+      <div class="game-cell"></div>
+      <div class="game-cell"></div>
+      <div class="game-cell"></div>
+      <div class="game-cell"></div>
+      <div class="game-cell"></div>
+      <div class="game-cell"></div>
+      <div class="game-cell"></div>
+    </div>
+    <!-- Notificación con jugador humano e IA -->
+    <h2 class="game-notification">
+      Turno de: <span class="current-player">X</span>
+    </h2>
+    <button class="game-restart">Restablecer</button>    
+  </div>
+  <script src="server.js"></script>
+</body>
+
+</html>
